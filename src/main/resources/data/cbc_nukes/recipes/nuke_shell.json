@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " P ",
+    "PRP",
+    "HNH",
+    " S "
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "P": {
+      "tag": "forge:plates/iron"
+    },
+    "N": {
+      "item": "alexscaves:nuclear_bomb"
+    },
+    "S": {
+      "tag": "forge:ingots/netherite"
+    },
+    "H": {
+      "item": "alexscaves:hazmat_block"
+    }
+  },
+  "result": {
+    "item": "cbc_nukes:nuke_shell"
+  },
+  "acceptMirrored": true
+}

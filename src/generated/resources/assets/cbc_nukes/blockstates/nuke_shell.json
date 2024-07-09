@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "cbc_nukes:block/nuke_shell",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "cbc_nukes:block/nuke_shell",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cbc_nukes:block/nuke_shell",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "cbc_nukes:block/nuke_shell",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "cbc_nukes:block/nuke_shell"
+    },
+    "facing=west": {
+      "model": "cbc_nukes:block/nuke_shell",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
