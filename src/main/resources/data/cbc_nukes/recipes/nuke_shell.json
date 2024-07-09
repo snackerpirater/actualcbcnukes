@@ -2,13 +2,13 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     " P ",
-    "PRP",
+    "PDP",
     "HNH",
     " S "
   ],
   "key": {
-    "R": {
-      "tag": "forge:dusts/redstone"
+    "D": {
+      "tag": "forge:gems/diamond"
     },
     "P": {
       "tag": "forge:plates/iron"
@@ -17,7 +17,7 @@
       "item": "alexscaves:nuclear_bomb"
     },
     "S": {
-      "tag": "forge:ingots/netherite"
+      "tag": "minecraft:wooden_slabs"
     },
     "H": {
       "item": "alexscaves:hazmat_block"
