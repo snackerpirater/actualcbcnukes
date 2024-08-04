@@ -8,18 +8,13 @@ import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipHelper;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import com.tterrag.registrate.builders.BlockBuilder;
-import com.tterrag.registrate.providers.ProviderType;
-import com.tterrag.registrate.providers.RegistrateLangProvider;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.EntityEntry;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -31,8 +26,6 @@ import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -40,7 +33,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import rbasamoyai.createbigcannons.CBCTags;
 import rbasamoyai.createbigcannons.CreateBigCannons;
@@ -131,9 +123,9 @@ public class CBCNukes
     @SubscribeEvent
 	void dataGen(GatherDataEvent event) {
         if (event.includeClient()) {
-            REGISTRATE.addRawLang("block.createnukelangtest.nuke_shell.tooltip.summary", "\"Now, I am become _Death_, the destroyer of worlds.\"");
-            REGISTRATE.addRawLang("block.createnukelangtest.nuke_shell.tooltip.condition1", "On Detonation");
-            REGISTRATE.addRawLang("block.createnukelangtest.nuke_shell.tooltip.behaviour1", "Unleashes a powerful nuclear blast, devastating the immediate area in an inferno and irradiating the surrounding environment.");
+            REGISTRATE.addRawLang("block.createnukecannon.nuke_shell.tooltip.summary", "\"Now, I am become _Death_, the destroyer of worlds.\"");
+            REGISTRATE.addRawLang("block.createnukecannon.nuke_shell.tooltip.condition1", "On Detonation");
+            REGISTRATE.addRawLang("block.createnukecannon.nuke_shell.tooltip.behaviour1", "Unleashes a powerful nuclear blast, devastating the immediate area in an inferno and irradiating the surrounding environment.");
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
